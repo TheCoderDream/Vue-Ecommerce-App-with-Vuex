@@ -6,8 +6,11 @@ import '../custom.scss'
 Vue.config.devtools = true;
 import store from './store';
 import {Plugin} from 'vue-fragment'
+import VueSwal from 'vue-swal'
+
 
 Vue.use(Plugin);
+Vue.use(VueSwal)
 
 
 
@@ -43,3 +46,7 @@ new Vue({
     store,
     router
 }).$mount('#app');
+
+router.afterEach(() => {
+    window.scrollTo(0,0);
+})

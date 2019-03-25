@@ -5,6 +5,7 @@
 ![alt-text](https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/blob/master/ecm3.png)
 ![alt-text](https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/blob/master/ecm4.png)
 ![alt-text](https://github.com/TheCodersDream/React-Ecommerce-App-with-Redux/blob/master/ecm5.png)
+![alt-text](./src/assets/ss1.png)
 
 
 # ecomerce

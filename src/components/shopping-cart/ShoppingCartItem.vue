@@ -63,7 +63,7 @@
                 this.$store.commit(DECREMENT_CART_ITEM_QUANTITY, this.product.id);
             },
             onRemoveCartItem() {
-                this.$store.commit(REMOVE_PRODUCT_FROM_CART, this.product);
+                this.$store.commit(REMOVE_PRODUCT_FROM_CART, this.product.id);
             }
         }
     }

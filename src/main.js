@@ -24,6 +24,7 @@ import Home from './Pages/Home';
 import ShoppingCartPage from './Pages/ShoppingCartPage';
 import ProductDetailPage from './Pages/ProductDetailPage';
 import {shortenTitle} from "./filters/shortenTitle";
+import {CLEAR_BRAND_FILTER, CLEAR_ORDER_BY_PRICE} from "./store/types";
 
 Vue.config.productionTip = false;
 
@@ -49,4 +50,6 @@ new Vue({
 
 router.afterEach(() => {
     window.scrollTo(0,0);
-})
+    store.commit(CLEAR_BRAND_FILTER);
+    store.commit(CLEAR_ORDER_BY_PRICE);
+});

@@ -75,6 +75,9 @@ const store = new Vuex.Store({
         [Types.REMOVE_BRAND_FROM_FILTER] (state, brand) {
             const reg = new RegExp(brand, 'gi');
             state.brandFilter = state.brandFilter.replace(reg, '');
+        },
+        [Types.CLEAR_BRAND_FILTER] (state) {
+            state.brandFilter = '';
         }
     },
     getters: {

@@ -10,6 +10,7 @@
             </li>
             <li
                     v-for="page of getpages()"
+                    :key="page.id"
                     :class="['page-item', {active: page === $store.state.currentPage}]"
                     @click="onPage(page)"
                     class="page-item"><button class="page-link">{{page}}</button></li>

@@ -3,6 +3,7 @@
         <div
                 :class="['layout-mode__item', {'layout-mode__item--active': isActive}]"
                 v-for="i in len"
+                :key="i"
                 class="layout-mode__item"></div>
     </div>
 

@@ -76,7 +76,7 @@ export default {
       this.currentImageIndex = imgIndex;
       this.currentImage = this.product.images[imgIndex];
     },
-    onImageMouseOut(e) {
+    onImageMouseOut() {
       this.currentImage = this.product.images[0];
     },
     onAddProductToCart() {

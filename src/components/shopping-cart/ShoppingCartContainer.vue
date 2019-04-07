@@ -9,6 +9,7 @@
             <div class="card-body">
                 <ShoppingCartItem
                         v-for="cartItem in $store.state.cart"
+                        :key="cartItem.id"
                         :product="cartItem"
                 ></ShoppingCartItem>
                 <h2 class="display-4 text-center" v-if="$store.state.cart.length === 0">
